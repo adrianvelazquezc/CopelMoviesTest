@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63F66BB8DF7D03FEE667F2DB /* Pods_CopelMoviesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A73F1F7F476DEC3790B463 /* Pods_CopelMoviesTest.framework */; };
+		CE82214E2A87504800789910 /* CMT_ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82214D2A87504800789910 /* CMT_ActivityIndicator.swift */; };
+		CEAC1ADA2A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC1AD92A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift */; };
+		CEAC1ADC2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC1ADB2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift */; };
+		CECF97122A86FF1C001197BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF97112A86FF1C001197BA /* AppDelegate.swift */; };
+		CECF971B2A86FF1E001197BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECF971A2A86FF1E001197BA /* Assets.xcassets */; };
+		CECF971E2A86FF1E001197BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECF971C2A86FF1E001197BA /* LaunchScreen.storyboard */; };
+		CECF972D2A870146001197BA /* CMT_NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF972C2A870146001197BA /* CMT_NetworkManager.swift */; };
+		CEFEC0112A8706490081225E /* CMT_LoginViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0092A8706490081225E /* CMT_LoginViewUI.swift */; };
+		CEFEC0122A87064A0081225E /* CMT_LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC00A2A8706490081225E /* CMT_LoginPresenter.swift */; };
+		CEFEC0132A87064A0081225E /* CMT_LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC00B2A8706490081225E /* CMT_LoginRouter.swift */; };
+		CEFEC0142A87064A0081225E /* CMT_LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC00C2A8706490081225E /* CMT_LoginProtocols.swift */; };
+		CEFEC0152A87064A0081225E /* CMT_LoginMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC00D2A8706490081225E /* CMT_LoginMain.swift */; };
+		CEFEC0162A87064A0081225E /* CMT_LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC00E2A8706490081225E /* CMT_LoginInteractor.swift */; };
+		CEFEC0172A87064A0081225E /* CMT_LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC00F2A8706490081225E /* CMT_LoginView.swift */; };
+		CEFEC0182A87064A0081225E /* CMT_LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0102A8706490081225E /* CMT_LoginEntity.swift */; };
+		CEFEC01A2A870CE80081225E /* CMT_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0192A870CE80081225E /* CMT_CollectionViewCell.swift */; };
+		CEFEC01D2A870E210081225E /* CMT_NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC01C2A870E210081225E /* CMT_NavigationBar.swift */; };
+		CEFEC0262A8710E20081225E /* CMT_MoviesViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC01E2A8710E20081225E /* CMT_MoviesViewUI.swift */; };
+		CEFEC0272A8710E20081225E /* CMT_MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC01F2A8710E20081225E /* CMT_MoviesPresenter.swift */; };
+		CEFEC0282A8710E20081225E /* CMT_MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0202A8710E20081225E /* CMT_MoviesRouter.swift */; };
+		CEFEC0292A8710E20081225E /* CMT_MoviesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0212A8710E20081225E /* CMT_MoviesProtocols.swift */; };
+		CEFEC02A2A8710E20081225E /* CMT_MoviesMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0222A8710E20081225E /* CMT_MoviesMain.swift */; };
+		CEFEC02B2A8710E20081225E /* CMT_MoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0232A8710E20081225E /* CMT_MoviesInteractor.swift */; };
+		CEFEC02C2A8710E20081225E /* CMT_MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0242A8710E20081225E /* CMT_MoviesView.swift */; };
+		CEFEC02D2A8710E20081225E /* CMT_MoviesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0252A8710E20081225E /* CMT_MoviesEntity.swift */; };
+		CEFEC02F2A8726500081225E /* CMT_ProfilePresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC02E2A8726500081225E /* CMT_ProfilePresent.swift */; };
+		CEFEC0382A8732B50081225E /* CMT_DetailsViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0302A8732B50081225E /* CMT_DetailsViewUI.swift */; };
+		CEFEC0392A8732B50081225E /* CMT_DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0312A8732B50081225E /* CMT_DetailsPresenter.swift */; };
+		CEFEC03A2A8732B50081225E /* CMT_DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0322A8732B50081225E /* CMT_DetailsRouter.swift */; };
+		CEFEC03B2A8732B50081225E /* CMT_DetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0332A8732B50081225E /* CMT_DetailsProtocols.swift */; };
+		CEFEC03C2A8732B50081225E /* CMT_DetailsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0342A8732B50081225E /* CMT_DetailsMain.swift */; };
+		CEFEC03D2A8732B50081225E /* CMT_DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0352A8732B50081225E /* CMT_DetailsInteractor.swift */; };
+		CEFEC03E2A8732B50081225E /* CMT_DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0362A8732B50081225E /* CMT_DetailsView.swift */; };
+		CEFEC03F2A8732B50081225E /* CMT_DetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0372A8732B50081225E /* CMT_DetailsEntity.swift */; };
+		CEFEC0412A8747340081225E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEC0402A8747340081225E /* String+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2920CF7677C4C0160F0F80A1 /* Pods-CopelMoviesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopelMoviesTest.release.xcconfig"; path = "Target Support Files/Pods-CopelMoviesTest/Pods-CopelMoviesTest.release.xcconfig"; sourceTree = "<group>"; };
+		78256EA0FE151527C62F967E /* Pods-CopelMoviesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopelMoviesTest.debug.xcconfig"; path = "Target Support Files/Pods-CopelMoviesTest/Pods-CopelMoviesTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B4A73F1F7F476DEC3790B463 /* Pods_CopelMoviesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopelMoviesTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE82214D2A87504800789910 /* CMT_ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_ActivityIndicator.swift; sourceTree = "<group>"; };
+		CEAC1AD92A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_GenresCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEAC1ADB2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_CompanysCollectionViewCell.swift; sourceTree = "<group>"; };
+		CECF970E2A86FF1C001197BA /* CopelMoviesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopelMoviesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECF97112A86FF1C001197BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CECF971A2A86FF1E001197BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CECF971D2A86FF1E001197BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CECF971F2A86FF1E001197BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECF972C2A870146001197BA /* CMT_NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_NetworkManager.swift; sourceTree = "<group>"; };
+		CEFEC0092A8706490081225E /* CMT_LoginViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginViewUI.swift; sourceTree = "<group>"; };
+		CEFEC00A2A8706490081225E /* CMT_LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginPresenter.swift; sourceTree = "<group>"; };
+		CEFEC00B2A8706490081225E /* CMT_LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginRouter.swift; sourceTree = "<group>"; };
+		CEFEC00C2A8706490081225E /* CMT_LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginProtocols.swift; sourceTree = "<group>"; };
+		CEFEC00D2A8706490081225E /* CMT_LoginMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginMain.swift; sourceTree = "<group>"; };
+		CEFEC00E2A8706490081225E /* CMT_LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginInteractor.swift; sourceTree = "<group>"; };
+		CEFEC00F2A8706490081225E /* CMT_LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginView.swift; sourceTree = "<group>"; };
+		CEFEC0102A8706490081225E /* CMT_LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_LoginEntity.swift; sourceTree = "<group>"; };
+		CEFEC0192A870CE80081225E /* CMT_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMT_CollectionViewCell.swift; sourceTree = "<group>"; };
+		CEFEC01C2A870E210081225E /* CMT_NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_NavigationBar.swift; sourceTree = "<group>"; };
+		CEFEC01E2A8710E20081225E /* CMT_MoviesViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesViewUI.swift; sourceTree = "<group>"; };
+		CEFEC01F2A8710E20081225E /* CMT_MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesPresenter.swift; sourceTree = "<group>"; };
+		CEFEC0202A8710E20081225E /* CMT_MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesRouter.swift; sourceTree = "<group>"; };
+		CEFEC0212A8710E20081225E /* CMT_MoviesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesProtocols.swift; sourceTree = "<group>"; };
+		CEFEC0222A8710E20081225E /* CMT_MoviesMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesMain.swift; sourceTree = "<group>"; };
+		CEFEC0232A8710E20081225E /* CMT_MoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesInteractor.swift; sourceTree = "<group>"; };
+		CEFEC0242A8710E20081225E /* CMT_MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesView.swift; sourceTree = "<group>"; };
+		CEFEC0252A8710E20081225E /* CMT_MoviesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_MoviesEntity.swift; sourceTree = "<group>"; };
+		CEFEC02E2A8726500081225E /* CMT_ProfilePresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_ProfilePresent.swift; sourceTree = "<group>"; };
+		CEFEC0302A8732B50081225E /* CMT_DetailsViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsViewUI.swift; sourceTree = "<group>"; };
+		CEFEC0312A8732B50081225E /* CMT_DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsPresenter.swift; sourceTree = "<group>"; };
+		CEFEC0322A8732B50081225E /* CMT_DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsRouter.swift; sourceTree = "<group>"; };
+		CEFEC0332A8732B50081225E /* CMT_DetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsProtocols.swift; sourceTree = "<group>"; };
+		CEFEC0342A8732B50081225E /* CMT_DetailsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsMain.swift; sourceTree = "<group>"; };
+		CEFEC0352A8732B50081225E /* CMT_DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsInteractor.swift; sourceTree = "<group>"; };
+		CEFEC0362A8732B50081225E /* CMT_DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsView.swift; sourceTree = "<group>"; };
+		CEFEC0372A8732B50081225E /* CMT_DetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_DetailsEntity.swift; sourceTree = "<group>"; };
+		CEFEC0402A8747340081225E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECF970B2A86FF1C001197BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F66BB8DF7D03FEE667F2DB /* Pods_CopelMoviesTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B626E64627C431E4534FC6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4A73F1F7F476DEC3790B463 /* Pods_CopelMoviesTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CECF97052A86FF1C001197BA = {
+			isa = PBXGroup;
+			children = (
+				CECF97102A86FF1C001197BA /* CopelMoviesTest */,
+				CECF970F2A86FF1C001197BA /* Products */,
+				F686230BD1C3A0090A320EA8 /* Pods */,
+				0B626E64627C431E4534FC6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CECF970F2A86FF1C001197BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECF970E2A86FF1C001197BA /* CopelMoviesTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CECF97102A86FF1C001197BA /* CopelMoviesTest */ = {
+			isa = PBXGroup;
+			children = (
+				CECF97272A870026001197BA /* Main */,
+				CECF97262A870020001197BA /* Modules */,
+				CECF97252A870000001197BA /* Utils */,
+				CECF971A2A86FF1E001197BA /* Assets.xcassets */,
+				CECF971C2A86FF1E001197BA /* LaunchScreen.storyboard */,
+				CECF971F2A86FF1E001197BA /* Info.plist */,
+			);
+			path = CopelMoviesTest;
+			sourceTree = "<group>";
+		};
+		CECF97252A870000001197BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEC0422A8748570081225E /* Extensions */,
+				CEFEC01B2A870E010081225E /* Components */,
+				CECF972B2A87012F001197BA /* Network */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CECF97262A870020001197BA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CECF972A2A87008C001197BA /* CMT_Login */,
+				CECF97292A870081001197BA /* CMT_Movies */,
+				CECF97282A870055001197BA /* CMT_Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CECF97272A870026001197BA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CECF97112A86FF1C001197BA /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CECF97282A870055001197BA /* CMT_Details */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEC0342A8732B50081225E /* CMT_DetailsMain.swift */,
+				CEFEC0322A8732B50081225E /* CMT_DetailsRouter.swift */,
+				CEFEC0372A8732B50081225E /* CMT_DetailsEntity.swift */,
+				CEFEC0312A8732B50081225E /* CMT_DetailsPresenter.swift */,
+				CEFEC0332A8732B50081225E /* CMT_DetailsProtocols.swift */,
+				CEFEC0352A8732B50081225E /* CMT_DetailsInteractor.swift */,
+				CEFEC0362A8732B50081225E /* CMT_DetailsView.swift */,
+				CEFEC0302A8732B50081225E /* CMT_DetailsViewUI.swift */,
+			);
+			path = CMT_Details;
+			sourceTree = "<group>";
+		};
+		CECF97292A870081001197BA /* CMT_Movies */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEC0222A8710E20081225E /* CMT_MoviesMain.swift */,
+				CEFEC0202A8710E20081225E /* CMT_MoviesRouter.swift */,
+				CEFEC0252A8710E20081225E /* CMT_MoviesEntity.swift */,
+				CEFEC01F2A8710E20081225E /* CMT_MoviesPresenter.swift */,
+				CEFEC0212A8710E20081225E /* CMT_MoviesProtocols.swift */,
+				CEFEC0232A8710E20081225E /* CMT_MoviesInteractor.swift */,
+				CEFEC0242A8710E20081225E /* CMT_MoviesView.swift */,
+				CEFEC01E2A8710E20081225E /* CMT_MoviesViewUI.swift */,
+			);
+			path = CMT_Movies;
+			sourceTree = "<group>";
+		};
+		CECF972A2A87008C001197BA /* CMT_Login */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEC00D2A8706490081225E /* CMT_LoginMain.swift */,
+				CEFEC00B2A8706490081225E /* CMT_LoginRouter.swift */,
+				CEFEC0102A8706490081225E /* CMT_LoginEntity.swift */,
+				CEFEC00A2A8706490081225E /* CMT_LoginPresenter.swift */,
+				CEFEC00C2A8706490081225E /* CMT_LoginProtocols.swift */,
+				CEFEC00E2A8706490081225E /* CMT_LoginInteractor.swift */,
+				CEFEC00F2A8706490081225E /* CMT_LoginView.swift */,
+				CEFEC0092A8706490081225E /* CMT_LoginViewUI.swift */,
+			);
+			path = CMT_Login;
+			sourceTree = "<group>";
+		};
+		CECF972B2A87012F001197BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CECF972C2A870146001197BA /* CMT_NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CED062E72A8AAD2D00BA5F6E /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC1AD92A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift */,
+				CEAC1ADB2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift */,
+				CEFEC0192A870CE80081225E /* CMT_CollectionViewCell.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		CEFEC01B2A870E010081225E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CED062E72A8AAD2D00BA5F6E /* Collection */,
+				CEFEC01C2A870E210081225E /* CMT_NavigationBar.swift */,
+				CEFEC02E2A8726500081225E /* CMT_ProfilePresent.swift */,
+				CE82214D2A87504800789910 /* CMT_ActivityIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CEFEC0422A8748570081225E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEC0402A8747340081225E /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F686230BD1C3A0090A320EA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78256EA0FE151527C62F967E /* Pods-CopelMoviesTest.debug.xcconfig */,
+				2920CF7677C4C0160F0F80A1 /* Pods-CopelMoviesTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CECF970D2A86FF1C001197BA /* CopelMoviesTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECF97222A86FF1E001197BA /* Build configuration list for PBXNativeTarget "CopelMoviesTest" */;
+			buildPhases = (
+				D56666F41F2A21587FE9544D /* [CP] Check Pods Manifest.lock */,
+				CECF970A2A86FF1C001197BA /* Sources */,
+				CECF970B2A86FF1C001197BA /* Frameworks */,
+				CECF970C2A86FF1C001197BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CopelMoviesTest;
+			productName = CopelMoviesTest;
+			productReference = CECF970E2A86FF1C001197BA /* CopelMoviesTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CECF97062A86FF1C001197BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CECF970D2A86FF1C001197BA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = CECF97092A86FF1C001197BA /* Build configuration list for PBXProject "CopelMoviesTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CECF97052A86FF1C001197BA;
+			productRefGroup = CECF970F2A86FF1C001197BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECF970D2A86FF1C001197BA /* CopelMoviesTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECF970C2A86FF1C001197BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECF971E2A86FF1E001197BA /* LaunchScreen.storyboard in Resources */,
+				CECF971B2A86FF1E001197BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D56666F41F2A21587FE9544D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CopelMoviesTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECF970A2A86FF1C001197BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFEC02D2A8710E20081225E /* CMT_MoviesEntity.swift in Sources */,
+				CEFEC0272A8710E20081225E /* CMT_MoviesPresenter.swift in Sources */,
+				CEFEC0132A87064A0081225E /* CMT_LoginRouter.swift in Sources */,
+				CEFEC0182A87064A0081225E /* CMT_LoginEntity.swift in Sources */,
+				CEFEC03E2A8732B50081225E /* CMT_DetailsView.swift in Sources */,
+				CEFEC0382A8732B50081225E /* CMT_DetailsViewUI.swift in Sources */,
+				CEFEC03D2A8732B50081225E /* CMT_DetailsInteractor.swift in Sources */,
+				CEFEC0282A8710E20081225E /* CMT_MoviesRouter.swift in Sources */,
+				CEAC1ADA2A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift in Sources */,
+				CEFEC03C2A8732B50081225E /* CMT_DetailsMain.swift in Sources */,
+				CEFEC0152A87064A0081225E /* CMT_LoginMain.swift in Sources */,
+				CECF972D2A870146001197BA /* CMT_NetworkManager.swift in Sources */,
+				CEFEC0162A87064A0081225E /* CMT_LoginInteractor.swift in Sources */,
+				CEFEC03F2A8732B50081225E /* CMT_DetailsEntity.swift in Sources */,
+				CEFEC0142A87064A0081225E /* CMT_LoginProtocols.swift in Sources */,
+				CEFEC0262A8710E20081225E /* CMT_MoviesViewUI.swift in Sources */,
+				CEFEC0172A87064A0081225E /* CMT_LoginView.swift in Sources */,
+				CECF97122A86FF1C001197BA /* AppDelegate.swift in Sources */,
+				CE82214E2A87504800789910 /* CMT_ActivityIndicator.swift in Sources */,
+				CEFEC02A2A8710E20081225E /* CMT_MoviesMain.swift in Sources */,
+				CEFEC01A2A870CE80081225E /* CMT_CollectionViewCell.swift in Sources */,
+				CEFEC0112A8706490081225E /* CMT_LoginViewUI.swift in Sources */,
+				CEFEC0392A8732B50081225E /* CMT_DetailsPresenter.swift in Sources */,
+				CEFEC01D2A870E210081225E /* CMT_NavigationBar.swift in Sources */,
+				CEAC1ADC2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift in Sources */,
+				CEFEC03B2A8732B50081225E /* CMT_DetailsProtocols.swift in Sources */,
+				CEFEC0122A87064A0081225E /* CMT_LoginPresenter.swift in Sources */,
+				CEFEC02F2A8726500081225E /* CMT_ProfilePresent.swift in Sources */,
+				CEFEC03A2A8732B50081225E /* CMT_DetailsRouter.swift in Sources */,
+				CEFEC02C2A8710E20081225E /* CMT_MoviesView.swift in Sources */,
+				CEFEC02B2A8710E20081225E /* CMT_MoviesInteractor.swift in Sources */,
+				CEFEC0412A8747340081225E /* String+Extension.swift in Sources */,
+				CEFEC0292A8710E20081225E /* CMT_MoviesProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CECF971C2A86FF1E001197BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECF971D2A86FF1E001197BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CECF97202A86FF1E001197BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CECF97212A86FF1E001197BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CECF97232A86FF1E001197BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78256EA0FE151527C62F967E /* Pods-CopelMoviesTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RHXBRCF87;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CopelMoviesTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adrian.CopelMoviesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CECF97242A86FF1E001197BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2920CF7677C4C0160F0F80A1 /* Pods-CopelMoviesTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RHXBRCF87;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CopelMoviesTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adrian.CopelMoviesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CECF97092A86FF1C001197BA /* Build configuration list for PBXProject "CopelMoviesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECF97202A86FF1E001197BA /* Debug */,
+				CECF97212A86FF1E001197BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECF97222A86FF1E001197BA /* Build configuration list for PBXNativeTarget "CopelMoviesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECF97232A86FF1E001197BA /* Debug */,
+				CECF97242A86FF1E001197BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CECF97062A86FF1C001197BA /* Project object */;
+}
