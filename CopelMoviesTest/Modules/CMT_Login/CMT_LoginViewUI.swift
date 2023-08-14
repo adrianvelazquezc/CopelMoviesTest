@@ -29,39 +29,16 @@ class CMT_LoginViewUI: UIView{
         return image
     }()
     
-    lazy var userNameTextField : UITextField = {
-        let textfield = UITextField()
-        textfield.translatesAutoresizingMaskIntoConstraints = false
-        textfield.layer.borderColor = UIColor.black.cgColor
-        textfield.text = "adrianvelazquezc"
-        textfield.placeholder = "Username"
-        textfield.layer.borderWidth = 0.5
-        textfield.layer.cornerRadius = 10
-        textfield.textColor = .black
-        textfield.backgroundColor = .white
-        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textfield.frame.size.height))
-        textfield.leftView = leftView
-        textfield.leftViewMode = .always
-        textfield.delegate = self
-        return textfield
+    lazy var userNameTextField: CMT_TextField = {
+        let textField = CMT_TextField(placeholder: "Username")
+        textField.delegate = self
+        return textField
     }()
-    
-    lazy var userPasswordTextField : UITextField = {
-        let textfield = UITextField()
-        textfield.translatesAutoresizingMaskIntoConstraints = false
-        textfield.layer.borderColor = UIColor.black.cgColor
-        textfield.text = "sU.!JEBT.j.S4Ru"
-        textfield.placeholder = "Password"
-        textfield.textColor = .black
-        textfield.layer.borderWidth = 0.5
-        textfield.layer.cornerRadius = 10
-        textfield.textColor = .black
-        textfield.backgroundColor = .white
-        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textfield.frame.size.height))
-        textfield.leftView = leftView
-        textfield.leftViewMode = .always
-        textfield.delegate = self
-        return textfield
+
+    lazy var userPasswordTextField: CMT_TextField = {
+        let textField = CMT_TextField(placeholder: "Password")
+        textField.delegate = self
+        return textField
     }()
     
     lazy var continueButton: UIButton = {

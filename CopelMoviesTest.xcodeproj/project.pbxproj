@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63F66BB8DF7D03FEE667F2DB /* Pods_CopelMoviesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A73F1F7F476DEC3790B463 /* Pods_CopelMoviesTest.framework */; };
+		CE4852C22A8AE35100C998EC /* CMT_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4852C12A8AE35100C998EC /* CMT_TextField.swift */; };
 		CE82214E2A87504800789910 /* CMT_ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82214D2A87504800789910 /* CMT_ActivityIndicator.swift */; };
 		CEAC1ADA2A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC1AD92A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift */; };
 		CEAC1ADC2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC1ADB2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift */; };
@@ -49,6 +50,7 @@
 		2920CF7677C4C0160F0F80A1 /* Pods-CopelMoviesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopelMoviesTest.release.xcconfig"; path = "Target Support Files/Pods-CopelMoviesTest/Pods-CopelMoviesTest.release.xcconfig"; sourceTree = "<group>"; };
 		78256EA0FE151527C62F967E /* Pods-CopelMoviesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopelMoviesTest.debug.xcconfig"; path = "Target Support Files/Pods-CopelMoviesTest/Pods-CopelMoviesTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A73F1F7F476DEC3790B463 /* Pods_CopelMoviesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopelMoviesTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4852C12A8AE35100C998EC /* CMT_TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMT_TextField.swift; sourceTree = "<group>"; };
 		CE82214D2A87504800789910 /* CMT_ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_ActivityIndicator.swift; sourceTree = "<group>"; };
 		CEAC1AD92A880C5A003D7461 /* CMT_GenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_GenresCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEAC1ADB2A8832EE003D7461 /* CMT_CompanysCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMT_CompanysCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				CED062E72A8AAD2D00BA5F6E /* Collection */,
 				CEFEC01C2A870E210081225E /* CMT_NavigationBar.swift */,
 				CEFEC02E2A8726500081225E /* CMT_ProfilePresent.swift */,
+				CE4852C12A8AE35100C998EC /* CMT_TextField.swift */,
 				CE82214D2A87504800789910 /* CMT_ActivityIndicator.swift */,
 			);
 			path = Components;
@@ -255,7 +258,6 @@
 				78256EA0FE151527C62F967E /* Pods-CopelMoviesTest.debug.xcconfig */,
 				2920CF7677C4C0160F0F80A1 /* Pods-CopelMoviesTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -270,6 +272,7 @@
 				CECF970A2A86FF1C001197BA /* Sources */,
 				CECF970B2A86FF1C001197BA /* Frameworks */,
 				CECF970C2A86FF1C001197BA /* Resources */,
+				F18CF197EB72153F58DE806F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,6 +351,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F18CF197EB72153F58DE806F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CopelMoviesTest/Pods-CopelMoviesTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CopelMoviesTest/Pods-CopelMoviesTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CopelMoviesTest/Pods-CopelMoviesTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,6 +406,7 @@
 				CEFEC03A2A8732B50081225E /* CMT_DetailsRouter.swift in Sources */,
 				CEFEC02C2A8710E20081225E /* CMT_MoviesView.swift in Sources */,
 				CEFEC02B2A8710E20081225E /* CMT_MoviesInteractor.swift in Sources */,
+				CE4852C22A8AE35100C998EC /* CMT_TextField.swift in Sources */,
 				CEFEC0412A8747340081225E /* String+Extension.swift in Sources */,
 				CEFEC0292A8710E20081225E /* CMT_MoviesProtocols.swift in Sources */,
 			);
