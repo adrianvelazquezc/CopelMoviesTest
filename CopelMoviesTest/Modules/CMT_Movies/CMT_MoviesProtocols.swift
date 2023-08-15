@@ -14,6 +14,7 @@ protocol CMT_MoviesViewProtocol: AnyObject {
     func notifyFavoriteList()
     func notifyError(error: String, step: ListService)
     func notifyShowProfile(list: [Pelicula])
+    func notifyAddDeleteFavoriteList()
 }
 
 protocol CMT_MoviesInteractorProtocol: AnyObject {

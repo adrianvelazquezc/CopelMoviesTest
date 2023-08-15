@@ -38,6 +38,18 @@ class CMT_MoviesView: UIViewController {
 }
 
 extension CMT_MoviesView: CMT_MoviesViewProtocol {
+    func notifyAddDeleteFavoriteList() {
+        if ((ui?.isFavorite) != nil) {
+            if let currentMovieId = ui?.currentMovieId {
+                ui?.favoriteMovieIDs.insert(currentMovieId)
+            }
+        } else {
+            if let currentMovieId = ui?.currentMovieId {
+                ui?.favoriteMovieIDs.remove(currentMovieId)
+            }
+        }
+    }
+    
     func notifyError(error: String, step: ListService) {
         let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))

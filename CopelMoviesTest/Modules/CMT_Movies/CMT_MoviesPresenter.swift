@@ -63,6 +63,7 @@ extension CMT_MoviesPresenter: CMT_MoviesPresenterProtocol {
     
     func responseFavoriteMovie() {
         self.view?.dissmissLoading()
+        self.view?.notifyAddDeleteFavoriteList()
     }
     
     func requestFavoritesWithPresent() {

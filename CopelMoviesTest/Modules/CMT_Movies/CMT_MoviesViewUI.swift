@@ -22,7 +22,8 @@ class CMT_MoviesViewUI: UIView{
     public var favoriteList: [Pelicula] = []
     public var favoriteMovieIDs: Set<Int> = []
     public var valueSelected: MoviesCategories = .popular
-    public var currendMovieId = 0
+    public var currentMovieId = 0
+    public var isFavorite = false
     
     lazy private var navigationBar: CMT_NavigationBar = {
         let navigationBar = CMT_NavigationBar()
@@ -168,8 +169,8 @@ extension CMT_MoviesViewUI: UICollectionViewDelegate, UICollectionViewDataSource
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let newId = movieList?[indexPath.row].id {
-            currendMovieId = newId
-            self.delegate?.notifyMoviesDetails(movieId: newId, isFavoriteMovie: favoriteMovieIDs.contains(currendMovieId))
+            currentMovieId = newId
+            self.delegate?.notifyMoviesDetails(movieId: newId, isFavoriteMovie: favoriteMovieIDs.contains(currentMovieId))
         }
     }
 }
@@ -186,6 +187,8 @@ extension CMT_MoviesViewUI: CMT_NavigationBarDelegate{
 
 extension CMT_MoviesViewUI: CMT_CollectionViewCellDelegate{
     func favorite(isFavorite: Bool, id: Int) {
+        self.currentMovieId = id
+        self.isFavorite = isFavorite
         self.delegate?.notifyUpdateFavorite(isFavorite: isFavorite, movieId: id)
     }
 }
